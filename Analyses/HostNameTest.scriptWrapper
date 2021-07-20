@@ -1,0 +1,24 @@
+#
+# @description: HostName Test
+# @author: Juan Bolinaga
+#
+
+#define variables
+# Inputs
+variable: input double input
+# Outputs
+variable: strComputerName string output
+
+
+# anything after the following line is interpreted as the script
+script: language=VBScript
+
+sub run
+Dim x
+x=0
+Do While x<10
+x=x+1
+Loop
+Set wshShell = CreateObject( "WScript.Shell" )
+strComputerName = wshShell.ExpandEnvironmentStrings( "%COMPUTERNAME%" )
+end sub
