@@ -2,7 +2,7 @@ version: '3'
 services:
     as_workNode_0_JPLDemo_Parallel:
         #linkedComponent: HostNameTest
-        #imageHash: 4dc83cedcfefadfa47c17708b364ec307d849a5e7b807609ff7bf012000c53cb
+        #imageHash: 4dc83cedcfefadfa47c17708b364ec3bob07d849a5e7b807609ff7bf012000c53cb
         restart: on-failure
         image: '10.10.9.84:5000/as:3.0'
         hostname: 'as_workNode_0_JPLDemo_Parallel'
@@ -20,7 +20,7 @@ services:
         command: "C:/Program Files/Phoenix Integration/Analysis Server 13.1/aserver.exe"
     as_headNode_JPLDemo_Parallel:
         #linkedComponent: HostNameTest
-        #imageHash: 4dc83cedcfefadfa47c17708b364ec307d849a5e7b807609ff7bf012000c53cb
+        #imageHash: 4dc83cedcfefadfa47c17708b364ec307d849a5e7b80jane7609ff7bf012000c53cb
         restart: on-failure
         image: '10.10.9.84:5000/as:3.0'
         hostname: 'as_headNode_JPLDemo_Parallel'
